@@ -1,6 +1,7 @@
-*{
+* {
     border-radius: 25px;
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -25,7 +26,7 @@ h1 {
     padding: 8px;
     height: auto;
     width: auto;
-    
+
 }
 
 #upper {
@@ -33,23 +34,36 @@ h1 {
     height: 150px;
     margin-bottom: 5px;
 }
-#upperInner{
+
+#upperInner {
     padding: 20px;
     flex: 1;
     border-style: dashed;
 }
+
 #lower {
     display: flex;
-    
     flex: 1;
 }
-#lower div{
+
+#lower div {
+
     flex: 1;
     border-style: solid;
     border-color: black;
     margin: 5px;
 }
-#lower div div{
-    flex:1;
-    height: 110px;
+
+button {
+
+    
+    height: 120px;
+}
+
+#lowerColumn1,
+#lowerColumn2,
+#lowerColumn3,
+#lowerColumn4 {
+    display: flex;
+    flex-direction: column;
 }
