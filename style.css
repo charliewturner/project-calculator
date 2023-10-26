@@ -1,14 +1,40 @@
-h1{
+h1 {
     display: flex;
     justify-content: center;
-    
-    
 }
-#container{
+
+#container {
     display: flex;
+    flex-direction: column;
     margin: auto;
     border-style: solid;
     border-color: black;
     width: 600px;
     height: 800px;
+}
+
+#upper,
+#lower {
+
+    border-style: solid;
+    border-color: black;
+    padding: 8px;
+    height: auto;
+    width: auto;
+    
+}
+
+#upper {
+    height: 150px;
+}
+
+#lower {
+    display: flex;
+    
+    flex: 1;
+}
+#lower div{
+    flex: 1;
+    border-style: solid;
+    border-color: black;
 }
