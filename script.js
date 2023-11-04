@@ -6,44 +6,48 @@ const equalsButton = document.getElementById("equalsButton");
 
 let firstNum = 0;
 let secondNum = 0;
-let operator;
-let result;
+let displayValue;
 
 
 
-function add (firstNum, secondNum) {
+function add(firstNum, secondNum) {
     return firstNum + secondNum;
 }
 
-function subtract (firstNum, secondNum) {
+function subtract(firstNum, secondNum) {
     return firstNum - secondNum;
 }
 
-function divide (firstNum, secondNum) {
+function divide(firstNum, secondNum) {
     return firstNum / secondNum;
 }
 
-function multiply (firstNum, secondNum) {
+function multiply(firstNum, secondNum) {
     return firstNum * secondNum;
 }
 
-function operate (operator, firstNum, secondNum) {
-    switch(operator) {
+function operate(operator, firstNum, secondNum) {
+    switch (operator) {
         case "+":
-            return add(a, b);
-        case "-": 
-            return subtract(a, b);
+            return add(firstNum, secondNum);
+
+        case "-":
+            return subtract(firstNum, secondNum);
+
         case "/":
-            return divide(a, b);
+            return divide(firstNum, secondNum);
+
         case "multiply":
-            return multiply(a, b);
+            return multiply(firstNum, secondNum);
+
         default:
             return null;
     }
 }
 
 
-function clearAll () {
-    
+
+function clearAll() {
+
 }
 
