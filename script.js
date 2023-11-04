@@ -1,32 +1,32 @@
-const plusButton = document.getElementById("plusButton");
-const minusButton = document.getElementById("minusButton");
-const divideButton = document.getElementById("divideButton");
-const multiplyButton = document.getElementById("multiplyButton");
-const equalsButton = document.getElementById("equalsButton");
+const operatorButtons = document.querySelectorAll('[data-operator]');
+const numberButtons = document.querySelectorAll('[data-number]');
 
-const zeroButton = document.getElementById("zeroButton");
-const oneButton = document.getElementById("oneButton");
-const twoButton = document.getElementById("twoButton");
-const threeButton = document.getElementById("threeButton");
-const fourButton = document.getElementById("fourButton");
-const fiveButton = document.getElementById("fiveButton");
-const sixButton = document.getElementById("sixButton");
-const sevenButton = document.getElementById("sevenButton");
-const eightButton = document.getElementById("eightButton");
-const nineButton = document.getElementById("nineButton");
-
-const displayValue = document.getElementById("displayValue");
+const liveField = document.getElementById("liveField");
+const previousOperand = document.getElementById("displayValue");
 const newValue = document.getElementById("newValue");
 
 let firstNum = 0;
 let secondNum = 0;
 
-function numberCall(number, appended) {
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        liveField.textContent += button.innerHTML;
+    })
+})
+
+operatorButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        liveField.textContent += button.innerHTML;
+    })
+})
+
+function appendNumber(number) {
     
 }
 
+
 function defaultScreen() {
-    displayValue.textContent = "0";
+    previousOperand.textContent = "0";
 }
 
 function add(firstNum, secondNum) {

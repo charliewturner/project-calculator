@@ -44,7 +44,7 @@ h1 {
     font-weight: 7000;
 }
 
-#newValue {
+#liveField {
     padding: 20px;
     flex: 1;
     border-style: dashed;
