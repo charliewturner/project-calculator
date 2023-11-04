@@ -4,11 +4,30 @@ const divideButton = document.getElementById("divideButton");
 const multiplyButton = document.getElementById("multiplyButton");
 const equalsButton = document.getElementById("equalsButton");
 
+const zeroButton = document.getElementById("zeroButton");
+const oneButton = document.getElementById("oneButton");
+const twoButton = document.getElementById("twoButton");
+const threeButton = document.getElementById("threeButton");
+const fourButton = document.getElementById("fourButton");
+const fiveButton = document.getElementById("fiveButton");
+const sixButton = document.getElementById("sixButton");
+const sevenButton = document.getElementById("sevenButton");
+const eightButton = document.getElementById("eightButton");
+const nineButton = document.getElementById("nineButton");
+
+const displayValue = document.getElementById("displayValue");
+const newValue = document.getElementById("newValue");
+
 let firstNum = 0;
 let secondNum = 0;
-let displayValue;
 
+function numberCall(number, appended) {
+    
+}
 
+function defaultScreen() {
+    displayValue.textContent = "0";
+}
 
 function add(firstNum, secondNum) {
     return firstNum + secondNum;
@@ -45,9 +64,8 @@ function operate(operator, firstNum, secondNum) {
     }
 }
 
-
-
 function clearAll() {
 
 }
 
+defaultScreen();
