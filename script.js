@@ -12,27 +12,34 @@ let result;
 
 
 function add (firstNum, secondNum) {
-    result = firstNum + secondNum;
-    return result;
+    return firstNum + secondNum;
 }
 
 function subtract (firstNum, secondNum) {
-    result = firstNum - secondNum;
-    return result;
+    return firstNum - secondNum;
 }
 
 function divide (firstNum, secondNum) {
-    result = firstNum / secondNum;
-    return result;
+    return firstNum / secondNum;
 }
 
 function multiply (firstNum, secondNum) {
-    result = firstNum * secondNum;
-    return result;
+    return firstNum * secondNum;
 }
 
-function operate () {
-    operator = 
+function operate (operator, firstNum, secondNum) {
+    switch(operator) {
+        case "+":
+            return add(a, b);
+        case "-": 
+            return subtract(a, b);
+        case "/":
+            return divide(a, b);
+        case "multiply":
+            return multiply(a, b);
+        default:
+            return null;
+    }
 }
 
 
